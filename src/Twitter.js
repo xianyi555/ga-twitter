@@ -14,32 +14,9 @@ const tweetsFromServer = [
 ];
 
 class Twitter extends Component {
-  constructor(props) {
-    super(props);
-    // this.state = {};
-    // this.loadTweetsFromServer = this.loadTweetsFromServer.bind(this);
-    // this.handleTweetSubmit = this.handleTweetSubmit.bind(this);
+  constructor() {
+    super();
   }
-  // loadTweetsFromServer() {
-  //   // GET updated set of tweets from database
-  //   $.get(this.props.url, (data) => {
-  //       // Set state in step 6 of the exercise!
-  //     }
-  //   );
-  // }
-  // handleTweetSubmit(author, text) {
-  //   const submittedTweet = { author: author, text: text };
-  //
-  //   // POST to add tweet to database
-  //   $.post(this.props.url, submittedTweet, (data) => {
-  //       // Set state in step 10 of the exercise!
-  //     }
-  //   );
-  // }
-  // componentDidMount() {
-  //   // Set this.state.data to most recent set of tweets from database
-  //   this.loadTweetsFromServer();
-  // }
   render() {
     return (
       <div className="twitter">
