@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Tweet from './Tweet';
 
 class TweetsList extends Component {
   constructor() {
@@ -7,7 +8,9 @@ class TweetsList extends Component {
   render() {
     return (
       <div className="tweets-list">
-        {/* Render some text here */}
+        { this.props.data.map(function(eachTweet){
+          return <Tweet author={ eachTweet.author } text={ eachTweet.text } />
+        }) }
       </div>
     );
   }
